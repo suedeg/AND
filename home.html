@@ -11,50 +11,57 @@
 body {
     background-color: #d6e0f5
 }
-    
- <div class="topnav" id="myTopnav"
- <button class="tablinks" onclick="window.location.href='home.html';" id="myButton">HOME</button>
-  <button class="tablinks" onclick="window.location.href='AboutUs.html';" id="myButton">ABOUT US</button>
-  <button class="tablinks" onclick="window.location.href='ClassesOffered.html';" id="myButton">COURSES</button>
-  <button class="tablinks" onclick="window.location.href='blog.html';" id="myButton">BLOG</button>
-</div>
- .topnav {
-    background-color: #6f92dc;
-    overflow: hidden;
+ /*-------------------*/
+    <!DOCTYPE html>
+<head>
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #adc1eb;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #ddd;
+    background-color: #4CAF50;
     color: white;
 }
-
- <h1 style="font-size: 100px;font-family:Monoton;"><font color="white"><h1><center>AND.<right></h1></font>
+</style>
 </head>
-  <p><font color="white"><h2><center>                      Helping students be the best them.</p></h2>
+<body>
 
-  <div class="tab">
-   <style>
-<center>  <button class="tablinks" onclick="window.location.href='login.html';" id="myButton">LOG IN</button>
-  <button class="tablinks" onclick="window.location.href='signup.html';" id="myButton">SIGN UP</button>
-</div>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
  
-  </style>
+  <button class="tablinks" onclick="window.location.href='home.html';" id="myButton">HOME</button>
+  <button class="tablinks" onclick="window.location.href='AboutUs.html';" id="myButton">ABOUT US</button>
+  <button class="tablinks" onclick="window.location.href='ClassesOffered.html';" id="myButton">COURSES</button>
+    <button class="tablinks" onclick="window.location.href='blog.html';" id="myButton">BLOG</button>
+
+</div>
+
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+</body>
 </html>
