@@ -17,16 +17,21 @@
 
 
 <script>
-var searchString = "";
+var userInput = "";
 function inputOnChange(val) {
-    searchString = val;
+    userInput = val;
     console.log(val);
 }
 
 function searchOnClick() {
-    searchString = "https://www.youtube.com/results?search_query=" + searchString;
+    var searchString = "https://www.youtube.com/results?search_query=" + userInput;
     console.log("Search button is clicked: " + searchString);
     window.open(searchString);
+    var searchString2 = "https://www.khanacademy.org/search?page_search_query=" + userInput;
+    window.open(searchString2);
+    var searchString3 = "https://www.coursera.org/courses?languages=en&query=" + userInput;
+    window.open(searchString3);
+
 }
 </script>
  </body>
