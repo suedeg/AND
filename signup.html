@@ -87,10 +87,15 @@ button {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
+.cancelbtn {
     float: left;
     width: 50%;
 }
+    
+ .signupbtn {
+     float: right;
+     width: 50%;
+    }
 
 /* Add padding to container elements */
 .container {
@@ -123,7 +128,7 @@ button {
 
     <span style= "display:inline">
         <input type="button" class="cancelbtn">Cancel</button>
-        <input type="button" onclick="window.location.href='StudentHome.html';" id="myButton">Sign Up</button>
+        <input type="button" class="signupbtn" onclick="window.location.href='StudentHome.html';" id="myButton">Sign Up</button>
   </span>
 </form>
 
