@@ -7,8 +7,9 @@ body {
 }
     
 </style>
+
+   
 <style>
-    
 form {
     border: 3px solid #f1f1f1;
 }
@@ -23,7 +24,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color: #f2f2f2;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -39,12 +40,17 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f2f2f2;
+    background-color: #f44336;
 }
 
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
 }
 
 .container {
@@ -57,7 +63,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
@@ -69,7 +75,12 @@ span.psw {
 </style>
 <body>
 
-<h1 style="font-size: 80px;"><font color="#8c8c8c"><h1><center>Login</center></h1></font>
+<h2>Login Form</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
   <div class="container">
     <label><b>Username</b></label>
@@ -78,16 +89,15 @@ span.psw {
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button> 
+    <button type="submit">Login</button>
     <input type="checkbox" checked="checked"> Remember me
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn"><font color="#8c8c8c">Cancel</button>
+    <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 
 </body>
 </html>
-
