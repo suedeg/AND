@@ -56,13 +56,62 @@ body {margin:0;}
 
 <div style="padding-left:16px">
 <h1 style="font-size: 80px;font-family:Monoton;"><font color="white"><h1 align=right><center>AND.</center></h1></font>
-  <p></p>
+  <p>Helping students be the best them</p>
 </div>
 
  
  <button class="tablinks" onclick="window.location.href='login.html';" id="myButton">LOG IN</button>
   <button class="tablinks" onclick="window.location.href='signup.html';" id="myButton">SIGN UP</button>
  
+ 
+ <head>
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #cccccc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<button class="button" onclick="window.location.href='login.html';" id="myButton"><span>Log In </span></button>
+
+<button class="button" onclick="window.location.href='signp.html';" id="myButton"><span>Sign Up </span></button>
+
  
 </body>
 </html>
